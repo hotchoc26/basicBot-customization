@@ -59,9 +59,9 @@
         language: "english",
         startupCap: 12, // 1-200
         startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
+        startupEmoji: true, // true or false
         cmdDeletion: true,
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        chatLink: "https://raw.githubusercontent.com/hotchoc26/basicBot-customization/master/en.json", //"https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         maximumAfk: 120,
         afkRemoval: true,
         maximumDc: 60,
@@ -72,10 +72,10 @@
         maximumLocktime: 10,
         cycleGuard: true,
         maximumCycletime: 10,
-        voteSkip: false,
-        voteSkipLimit: 10,
+        voteSkip: true,
+        voteSkipLimit: 8,
         timeGuard: true,
-        maximumSongLength: 10,
+        maximumSongLength: 7,
         autodisable: true,
         commandCooldown: 30,
         usercommandsEnabled: true,
@@ -91,9 +91,9 @@
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: false,
+        motdEnabled: true,
         motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motd: "Welcome to the Buzzjack room!",
         filterChat: true,
         etaRestriction: false,
         welcome: true,
