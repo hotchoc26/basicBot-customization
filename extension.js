@@ -57,7 +57,7 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "BuzzjackBot",
         language: "english",
-        startupCap: 12, // 1-200
+        startupCap: 120, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: true, // true or false
         cmdDeletion: true,
