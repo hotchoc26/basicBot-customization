@@ -8,7 +8,7 @@
         if (!window.bot) {
             return setTimeout(extend, 1 * 1000);
         }
-
+//lol
         //Precaution to make sure it is assigned properly.
         var bot = window.bot;
 
