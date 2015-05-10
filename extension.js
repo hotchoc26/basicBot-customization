@@ -1,6 +1,6 @@
 (function () {
     //Link location of your fork so you don't have to modify so many things.
-    var fork = "Yemasthui";
+    var fork = "hotchoc26";
 		
     //Define our function responsible for extending the bot.
     function extend() {
@@ -53,11 +53,11 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "BuzzjackBot",
         language: "english",
-        startupCap: 1, // 1-200
+        startupCap: 50, // 1-200
         startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
+        startupEmoji: true, // true or false
         cmdDeletion: true,
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         maximumAfk: 120,
@@ -70,10 +70,10 @@
         maximumLocktime: 10,
         cycleGuard: true,
         maximumCycletime: 10,
-        voteSkip: false,
-        voteSkipLimit: 10,
+        voteSkip: true,
+        voteSkipLimit: 6,
         timeGuard: true,
-        maximumSongLength: 10,
+        maximumSongLength: 7,
         autodisable: true,
         commandCooldown: 30,
         usercommandsEnabled: true,
@@ -89,7 +89,7 @@
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: false,
+        motdEnabled: true,
         motdInterval: 5,
         motd: "Temporary Message of the Day",
         filterChat: true,
