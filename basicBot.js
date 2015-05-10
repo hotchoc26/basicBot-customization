@@ -1,8 +1,8 @@
-/**
+
  *Copyright 2014 Yemasthui
  *Modifications (including forks) of the code to fit personal needs are allowed only for personal use and should refer back to the original source.
  *This software is not for profit, any extension, or unauthorised person providing this software is not authorised to be in a position of any monetary gain from this use of this software. Any and all money gained under the use of the software (which includes donations) must be passed on to the original author.
- */
+ 
 
 
 (function () {
@@ -54,7 +54,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/hotchoc26/basicBot/master/lang/langIndex.json", function (json) {
+        $.get("https://raw.githubusercontent.com/hotchoc26/basicBot-customization/master/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -248,8 +248,8 @@
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-                OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleOPlist.json"
+                NSFW: "https://raw.githubusercontent.com/hotchoc26/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
+                OP: "https://raw.githubusercontent.com/hotchoc26/basicBot-customization/master/blacklists/ExampleOPlist.json"
             }
         },
         room: {
@@ -866,7 +866,7 @@
                 }
             }
 
-            /*var alreadyPlayed = false;
+            var alreadyPlayed = false;
             for (var i = 0; i < basicBot.room.historyList.length; i++) {
                 if (basicBot.room.historyList[i][0] === obj.media.cid) {
                     var firstPlayed = basicBot.room.historyList[i][1];
@@ -1120,7 +1120,7 @@
                 basicBot.room.roomstats.chatmessages++;
             },
             spam: [
-                'hueh', 'hu3', 'brbr', 'heu', 'brbr', 'kkkk', 'spoder', 'mafia', 'zuera', 'zueira',
+                'hueh', 'hu3', 'brbr', 'Jade', 'Lee', 'Toby', 'heu', 'brbr', 'kkkk', 'spoder', 'mafia', 'zuera', 'zueira',
                 'zueria', 'aehoo', 'aheu', 'alguem', 'algum', 'brazil', 'zoeira', 'fuckadmins', 'affff', 'vaisefoder', 'huenaarea',
                 'hitler', 'ashua', 'ahsu', 'ashau', 'lulz', 'huehue', 'hue', 'huehuehue', 'merda', 'pqp', 'puta', 'mulher', 'pula', 'retarda', 'caralho', 'filha', 'ppk',
                 'gringo', 'fuder', 'foder', 'hua', 'ahue', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 'foda'
@@ -1318,7 +1318,7 @@
                 return perm >= minPerm;
 
             },
-            /**
+            
              command: {
                         command: 'cmd',
                         rank: 'user/bouncer/mod/manager',
@@ -1717,25 +1717,25 @@
                 rank: 'user',
                 type: 'startsWith',
                 cookies: ['has given you a chocolate chip cookie!',
-                    'has given you a soft homemade oatmeal cookie!',
-                    'has given you a plain, dry, old cookie. It was the last one in the bag. Gross.',
-                    'gives you a sugar cookie. What, no frosting and sprinkles? 0/10 would not touch.',
-                    'gives you a chocolate chip cookie. Oh wait, those are raisins. Bleck!',
-                    'gives you an enormous cookie. Poking it gives you more cookies. Weird.',
-                    'gives you a fortune cookie. It reads "Why aren\'t you working on any projects?"',
+                    'has given you a soft homemade oatmeal cookie! <3 ',
+                    'has given you a plain, dry, old cookie. It was the last one in the bag and saved it just for you!.',
+                    'gives you a sugar cookie. What, no frosting and sprinkles? You\'re too basic a bitch for that unforch',
+                    'gives you a chocolate chip cookie. Oh wait, those are raisins. Hahahaha!',
+                    'gives you an enormous cookie. Poking it gives you more cookies. Weird. ',
+                    'gives you a fortune cookie. It reads "Why aren\'t you doing your work?"',
                     'gives you a fortune cookie. It reads "Give that special someone a compliment"',
-                    'gives you a fortune cookie. It reads "Take a risk!"',
-                    'gives you a fortune cookie. It reads "Go outside."',
-                    'gives you a fortune cookie. It reads "Don\'t forget to eat your veggies!"',
+                    'gives you a fortune cookie. It reads "Your next play will be skipped by the room.',
+                    'gives you a fortune cookie. It reads "Go outside and think about your life choices."',
+                    'gives you a fortune cookie. It reads "Don\'t forget to eat your veggies betch!"',
                     'gives you a fortune cookie. It reads "Do you even lift?"',
-                    'gives you a fortune cookie. It reads "m808 pls"',
-                    'gives you a fortune cookie. It reads "If you move your hips, you\'ll get all the ladies."',
+                    'gives you a fortune cookie. It reads "U mad bro?"',
+                    'gives you a fortune cookie. It reads "If you move your hips, you\'ll get all the ladies. "',
                     'gives you a fortune cookie. It reads "I love you."',
                     'gives you a Golden Cookie. You can\'t eat it because it is made of gold. Dammit.',
-                    'gives you an Oreo cookie with a glass of milk!',
+                    'gives you an Oreo cookie with a glass of milk! Home made by Jade, Caitlin, Kath and UV!',
                     'gives you a rainbow cookie made with love :heart:',
-                    'gives you an old cookie that was left out in the rain, it\'s moldy.',
-                    'bakes you fresh cookies, it smells amazing.'
+                    'gives you an old cookie that was left out in the rain, it\'s moldy and was saved just for you!',
+                    'bakes you fresh cookies, they smell amazing.'
                 ],
                 getCookie: function () {
                     var c = Math.floor(Math.random() * this.cookies.length);
@@ -1847,7 +1847,7 @@
                 }
             },
 
-            /*deletechatCommand: {
+            deletechatCommand: {
                 command: 'deletechat',
                 rank: 'mod',
                 type: 'startsWith',
@@ -1867,15 +1867,15 @@
                         for (var i = 0; i < chats.length; i++) {
                             var n = from[i].textContent;
                             if (name.trim() === n.trim()) {
-                                // var messagecid = $(message)[i].getAttribute('data-cid');
-                                // var emotecid = $(emote)[i].getAttribute('data-cid');
-                                // API.moderateDeleteChat(messagecid);
-                                // try {
-                                //     API.moderateDeleteChat(messagecid);
-                                // }
-                                // finally {
-                                //     API.moderateDeleteChat(emotecid);
-                                // }
+                                 var messagecid = $(message)[i].getAttribute('data-cid');
+                                 var emotecid = $(emote)[i].getAttribute('data-cid');
+                                 API.moderateDeleteChat(messagecid);
+                                 try {
+                                     API.moderateDeleteChat(messagecid);
+                                 }
+                                 finally {
+                                     API.moderateDeleteChat(emotecid);
+                                 }
                                 if (typeof $(message)[i].getAttribute('data-cid') == "undefined"){
                                     API.moderateDeleteChat($(emote)[i].getAttribute('data-cid')); // works well with normal messages but not with emotes due to emotes and messages are seperate.
                                 } else {
@@ -1929,7 +1929,7 @@
                             case 'cs': ch += 'Mluvte prosím anglicky.'; break;
                             case 'sr': ch += 'Молим Вас, говорите енглески.'; break;                                  
                         }
-                        ch += ' English please.';
+                        ch += ' Watch your language boy! It should be English!';
                         API.sendChat(ch);
                     }
                 }
@@ -2234,7 +2234,7 @@
                         if (msg.length <= cmd.length + 1) return API.sendChat(subChat(basicBot.chat.currentlang, {language: basicBot.settings.language}));
                         var argument = msg.substring(cmd.length + 1);
 
-                        $.get("https://rawgit.com/Yemasthui/basicBot/master/lang/langIndex.json", function (json) {
+                        $.get("https://raw.githubusercontent.com/Yemasthui/basicBot/master/lang/langIndex.json", function (json) {
                             var langIndex = json;
                             var link = langIndex[argument.toLowerCase()];
                             if (typeof link === "undefined") {
@@ -2577,7 +2577,7 @@
                         var permFrom = basicBot.userUtilities.getPermission(chat.uid);
                         var permUser = basicBot.userUtilities.getPermission(user.id);
                         if (permFrom > permUser) {
-                            /*
+                            
                              basicBot.room.mutedUsers.push(user.id);
                              if (time === null) API.sendChat(subChat(basicBot.chat.mutednotime, {name: chat.un, username: name}));
                              else {
@@ -3115,7 +3115,7 @@
                     else {
                         var msg = chat.message;
                         var permFrom = basicBot.userUtilities.getPermission(chat.uid);
-                        /**
+                        
                          if (msg.indexOf('@') === -1 && msg.indexOf('all') !== -1) {
                             if (permFrom > 2) {
                                 basicBot.room.mutedUsers = [];
@@ -3133,7 +3133,7 @@
 
                         var permUser = basicBot.userUtilities.getPermission(user.id);
                         if (permFrom > permUser) {
-                            /*
+                            
                              var muted = basicBot.room.mutedUsers;
                              var wasMuted = false;
                              var indexMuted = -1;
