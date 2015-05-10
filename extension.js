@@ -8,7 +8,7 @@
         if (!window.bot) {
             return setTimeout(extend, 1 * 1000);
         }
-//lol
+
         //Precaution to make sure it is assigned properly.
         var bot = window.bot;
 
@@ -18,7 +18,6 @@
         /*
          Extend the bot here, either by calling another function or here directly.
          Model code for a bot command:
-
          bot.commands.commandCommand = {
          command: 'cmd',
          rank: 'user/bouncer/mod/manager',
@@ -31,7 +30,6 @@
          }
          }
          }
-
          */
 
         bot.commands.baconCommand = {
@@ -55,13 +53,14 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "BuzzjackBot",
+        botName: "basicBot",
         language: "english",
-        startupCap: 30, // 1-200
+        startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
-        startupEmoji: true, // true or false
+        startupEmoji: false, // true or false
         cmdDeletion: true,
-        chatLink: "https://raw.githubusercontent.com/Yemasthui/basicBot-customization/master/en.json",
+        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        maximumAfk: 120,
         afkRemoval: true,
         maximumDc: 60,
         bouncerPlus: true,
@@ -71,10 +70,10 @@
         maximumLocktime: 10,
         cycleGuard: true,
         maximumCycletime: 10,
-        voteSkip: true,
-        voteSkipLimit: 8,
+        voteSkip: false,
+        voteSkipLimit: 10,
         timeGuard: true,
-        maximumSongLength: 7,
+        maximumSongLength: 10,
         autodisable: true,
         commandCooldown: 30,
         usercommandsEnabled: true,
@@ -90,9 +89,9 @@
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: true,
+        motdEnabled: false,
         motdInterval: 5,
-        motd: "Welcome to the Buzzjack room!",
+        motd: "Temporary Message of the Day",
         filterChat: true,
         etaRestriction: false,
         welcome: true,
