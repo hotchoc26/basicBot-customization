@@ -59,7 +59,7 @@
         startupVolume: 0, // 0-100
         startupEmoji: true, // true or false
         cmdDeletion: true,
-        chatLink: "https://rawgit.com/Yamasthui/basicBot-customization/master/en.json",
+        chatLink: "https://raw.githubusercontent.com/Yamasthui/basicBot-customization/master/en.json",
         maximumAfk: 120,
         afkRemoval: true,
         maximumDc: 60,
@@ -112,6 +112,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Yamasthui/basicBot/master/basicBot.js", extend);
+    $.getScript("https://raw.githubusercontent.com/Yamasthui/basicBot/master/basicBot.js", extend);
 
 }).call(this);
