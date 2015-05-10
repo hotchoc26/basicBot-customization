@@ -53,7 +53,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "BuzzjackBot",
+        botName: "basicBot",
         language: "english",
         startupCap: 50, // 1-200
         startupVolume: 0, // 0-100
