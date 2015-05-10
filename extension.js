@@ -1,6 +1,6 @@
 (function () {
     //Link location of your fork so you don't have to modify so many things.
-    var fork = "Yemasthui";
+    var fork = "hotchoc26";
 		
     //Define our function responsible for extending the bot.
     function extend() {
@@ -55,13 +55,13 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "BuzzjackBot",
         language: "english",
-        startupCap: 1, // 1-200
+        startupCap: 50, // 1-200
         startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
+        startupEmoji: true, // true or false
         cmdDeletion: true,
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        chatLink: "https://raw.githubusercontent.com/hotchoc26/basicBot-customization/master/en.json",
         maximumAfk: 120,
         afkRemoval: true,
         maximumDc: 60,
