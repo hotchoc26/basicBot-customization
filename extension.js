@@ -1,6 +1,6 @@
 (function () {
     //Link location of your fork so you don't have to modify so many things.
-    var fork = "hotchoc26";
+    var fork = "Yemasthui";
 		
     //Define our function responsible for extending the bot.
     function extend() {
