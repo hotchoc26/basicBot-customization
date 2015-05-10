@@ -6,7 +6,6 @@
 
 
 (function () {
-
     API.getWaitListPosition = function(id){
         if(typeof id === 'undefined' || id === null){
             id = API.getUser().id;
@@ -183,7 +182,7 @@
         status: false,
         name: "BuzzjackBot",
         loggedInID: null,
-        scriptLink: "https://github.com/hotchoc26/basicBot-customization/blob/master/extension.js",
+        scriptLink: "https://rawgit.com/hotchoc26/basicBot-customization/blob/master/extension.js",
         cmdLink: "http://git.io/245Ppg",
         chatLink: "https://raw.githubusercontent.com/hotchoc26/basicBot-customization/master/en.json",
         chat: null,
@@ -2234,7 +2233,7 @@
                         if (msg.length <= cmd.length + 1) return API.sendChat(subChat(basicBot.chat.currentlang, {language: basicBot.settings.language}));
                         var argument = msg.substring(cmd.length + 1);
 
-                        $.get("https://raw.githubusercontent.com/Yemasthui/basicBot/master/lang/langIndex.json", function (json) {
+                        $.get("https://raw.githubusercontent.com/hotchoc26/basicBot-customization/master/langIndex.json", function (json) {
                             var langIndex = json;
                             var link = langIndex[argument.toLowerCase()];
                             if (typeof link === "undefined") {
