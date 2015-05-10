@@ -55,7 +55,7 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "basicBot",
         language: "english",
-        startupCap: 1, // 1-200
+        startupCap: 30, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
         cmdDeletion: true,
