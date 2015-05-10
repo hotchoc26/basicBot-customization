@@ -61,7 +61,7 @@
         startupVolume: 0, // 0-100
         startupEmoji: true, // true or false
         cmdDeletion: true,
-        chatLink: "https://raw.githubusercontent.com/hotchoc26/basicBot-customization/master/en.json",
+        chatLink: "https://raw.githubusercontent.com/Yemasthui/basicBot-customization/master/en.json",
         afkRemoval: true,
         maximumDc: 60,
         bouncerPlus: true,
